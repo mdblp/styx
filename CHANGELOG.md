@@ -2,7 +2,7 @@
 
 Styx is a service that uses hakken to discover services and route requests.
 
-## Unreleased 
+## 0.1.0 
 
 ### Added
 
