@@ -33,4 +33,5 @@ deploy:
 
 script:
   - npm test
+  - npm audit --registry=https://registry.npmjs.org --production
   - ./artifact.sh
