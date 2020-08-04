@@ -1,6 +1,6 @@
 {
   "name": "styx",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Router",
   "keywords": [
     "routing",
@@ -24,7 +24,9 @@
   ],
   "main": "lib/charon.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prebuild-soup": "mkdir -p doc/soup",
+    "build-soup": "release-helper gen-dep-report doc/soup/${npm_package_name}-${npm_package_version}-soup.md"
   },
   "dependencies": {
     "amoeba": "^0.8.1",
