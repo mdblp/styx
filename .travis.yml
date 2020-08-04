@@ -50,5 +50,5 @@ deploy:
 
 script:
   - npm test
-  - npm audit --registry=https://registry.npmjs.org --production
+  - npm audit --registry=https://registry.npmjs.org --production --audit-level=moderate
   - ./artifact.sh
